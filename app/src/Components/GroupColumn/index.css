@@ -14,6 +14,11 @@
 .group-column-item {
     flex-shrink: 0;
     background: powderblue;
+    box-sizing: border-box;
+}
+
+.group-column-item:hover {
+    border: 3px darkred solid;
 }
 
 .group-column-header, .group-column-item {
