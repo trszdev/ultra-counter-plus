@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env PUBLIC_URL=/ultra-counter-plus react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -48,6 +48,7 @@
   "devDependencies": {
     "@types/chance": "^1.1.1",
     "@types/file-saver": "^2.0.1",
+    "cross-env": "^7.0.3",
     "ts-interface-builder": "^0.2.3"
   }
 }
