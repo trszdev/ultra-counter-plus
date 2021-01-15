@@ -1,0 +1,30 @@
+.group-column {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex-shrink: 0;
+}
+
+.group-column-header {
+    background: white;
+    flex-shrink: 0;
+}
+
+.group-column-item {
+    flex-shrink: 0;
+    background: powderblue;
+}
+
+.group-column-header, .group-column-item {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+}
+
+.group-column-header-count, .group-column-item-count {
+    color: darkred;
+}

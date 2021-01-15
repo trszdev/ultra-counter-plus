@@ -1,3 +1,53 @@
 .title {
     color: pink;
 }
+
+.session-screen {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: grey;
+}
+
+.session-screen-toolbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.session-screen-toolbar.incrementing {
+    background: lemonchiffon;
+}
+
+.session-screen-toolbar.decrementing {
+    background: pink;
+}
+
+.session-screen-board {
+    flex: 1 0;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.session-screen-toolbar-btn {
+    flex: 0 1 20px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.session-screen-toolbar-btn.close {
+    background-image: url('./cancel.svg');
+}
+
+.session-screen-toolbar-btn.menu {
+    background-image: url('./menu.svg');
+}
+
